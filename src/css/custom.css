@@ -66,7 +66,12 @@ pre {
   background: linear-gradient(30deg, #fff, #7d9bee);
 }
 
-.clean-btn {
+.toggleButton_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
+  border: 1px solid #3268fd8f;
+  padding: 4px;
+  border-radius: 4px !important;
+}
+.backToTopButtonShow_node_modules-\@docusaurus-theme-classic-lib-theme-BackToTopButton-styles-module {
   border: 1px solid #3268fd8f;
   padding: 4px;
   border-radius: 4px !important;
@@ -84,4 +89,19 @@ pre {
 
 [data-theme="dark"] #search_input_react {
   background: linear-gradient(30deg, rgb(0, 0, 0), rgb(39, 39, 39));
+}
+
+.navbar-sidebar__brand {
+  padding: 16px 24px;
+  height: fit-content;
+}
+
+@media screen and (max-width: 996px) {
+  .navbar--fixed-top {
+    padding: 16px 24px;
+  }
+  #search_input_react {
+    width: 150px;
+    margin-right: 24px;
+  }
 }
