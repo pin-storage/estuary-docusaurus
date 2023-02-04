@@ -85,7 +85,9 @@ const config = {
           },
         },
       ],
-
+      colorMode: {
+        defaultMode: "dark",
+      },
       docs: {
         sidebar: {
           autoCollapseCategories: false,
