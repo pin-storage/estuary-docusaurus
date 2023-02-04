@@ -8,20 +8,27 @@
 :root {
   --ifm-font-family-base: -apple-system, BlinkMacSystemFont, helvetica neue,
     helvetica, sans-serif;
-  --ifm-color-primary: #0002ff;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
   --ifm-navbar-height: 48px;
   --ifm-navbar-item-padding-vertical: 0px;
   --ifm-navbar-padding-horizontal: 0px;
+
+  --ifm-color-primary: #134be7;
+  --ifm-color-primary-dark: #1143d0;
+  --ifm-color-primary-darker: #1040c4;
+  --ifm-color-primary-darkest: #0d34a2;
+  --ifm-color-primary-light: #265aed;
+  --ifm-color-primary-lighter: #3163ee;
+  --ifm-color-primary-lightest: #547df1;
 }
 [data-theme="dark"] {
-  --ifm-color-primary: hsl(240, 100%, 69%);
+  --ifm-color-primary: #48cfaf;
+  --ifm-color-primary-dark: #34c7a4;
+  --ifm-color-primary-darker: #31bc9b;
+  --ifm-color-primary-darkest: #299b80;
+  --ifm-color-primary-light: #5ed5b9;
+  --ifm-color-primary-lighter: #69d8bd;
+  --ifm-color-primary-lightest: #8ae0cc;
 }
 
 .docusaurus-highlight-code-line {
@@ -71,16 +78,31 @@ pre {
   padding: 4px;
   border-radius: 4px !important;
 }
+
 .backToTopButtonShow_node_modules-\@docusaurus-theme-classic-lib-theme-BackToTopButton-styles-module {
   border: 1px solid #3268fd8f;
   padding: 4px;
   border-radius: 4px !important;
 }
 
+[data-theme="dark"]
+  .toggleButton_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
+  border: 1px solid #48cfaf;
+}
+
+[data-theme="dark"]
+  .backToTopButtonShow_node_modules-\@docusaurus-theme-classic-lib-theme-BackToTopButton-styles-module {
+  border: 1px solid #48cfaf;
+}
+
 #search_input_react {
   border-radius: 4px !important;
   border: 1px solid #3268fd8f;
   width: 250px;
+}
+
+[data-theme="dark"] #search_input_react {
+  border: 1px solid #48cfaf;
 }
 
 [data-theme="dark"] .navbar--fixed-top {
