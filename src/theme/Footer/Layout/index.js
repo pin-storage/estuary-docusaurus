@@ -65,7 +65,7 @@ export default function FooterLayout({ style, links, logo, copyright }) {
           </ul>
         ))}
         <ul>
-          <li>
+          <li className={footerStyles.logo_container}>
             <img
               src="/img/icons/horizontal_gradient.png"
               className={footerStyles.logo}
