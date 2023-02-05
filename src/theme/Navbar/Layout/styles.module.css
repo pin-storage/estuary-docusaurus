@@ -1,0 +1,39 @@
+.navbarHideable {
+  transition: transform var(--ifm-transition-fast) ease;
+}
+
+.navbarHidden {
+  transform: translate3d(0, calc(-100% - 2px), 0);
+}
+
+.logo {
+  height: 32px !important;
+  object-fit: contain;
+  width: 400px;
+}
+
+.logo_mobile {
+  height: 32px !important;
+  object-fit: contain;
+}
+.link_mobile {
+  display: none;
+}
+
+.link {
+  margin: 0;
+  padding: 0;
+  height: 32px !important;
+}
+
+@media screen and (max-width: 996px) {
+  .link {
+    display: none;
+  }
+  .link_mobile {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 32px !important;
+  }
+}

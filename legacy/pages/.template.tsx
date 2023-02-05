@@ -1,8 +1,8 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import App from '@components/App';
+import App from "@components/App";
 
 const markdown = ``;
 
@@ -10,7 +10,7 @@ const code = `class Example extends React.Component {
   componentDidMount() {
     // TODO
     // Use this template to write an example
-    fetch('https://api.estuary.tech/health')
+    fetch('https://api.pin.storage/health')
       .then(data => {
         return data.json();
       })
@@ -24,14 +24,14 @@ const code = `class Example extends React.Component {
   }
 }`;
 
-const curl = `curl -X GET https://api.estuary.tech/health`;
+const curl = `curl -X GET https://api.pin.storage/health`;
 
 function Template(props) {
   return (
     <App
-      title="Estuary Documentation: Template"
-      description="Template for our documentation site for https://estuary.tech"
-      url="https://docs.estuary.tech"
+      title="Pin.Storage Documentation: Template"
+      description="Template for our documentation site for https://pin.storage"
+      url="https://docs.pin.storage"
       curl={curl}
       markdown={markdown}
       code={code}

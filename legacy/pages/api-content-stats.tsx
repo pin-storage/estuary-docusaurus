@@ -1,25 +1,28 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import App from '@components/App';
+import App from "@components/App";
 
-const endpoint = '/content/stats';
-const markdown = `# ➟ ` + endpoint + `
+const endpoint = "/content/stats";
+const markdown =
+  `# ➟ ` +
+  endpoint +
+  `
 
-Use this endpoint to list all of the data you have pinned to Estuary.
+Use this endpoint to list all of the data you have pinned to Pin.Storage.
 
 ### Swagger
 For more information about this API swagger specification, see [here](swagger-ui-page#/content/get_content_stats)
 
 ### This page is a work in progress
 
-We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.estuary.tech/feedback).
+We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.pin.storage/feedback).
 `;
 
 const code = `class Example extends React.Component {
   componentDidMount() {
-    fetch('https://api.estuary.tech/content/stats', {
+    fetch('https://api.pin.storage/content/stats', {
       method: 'GET',
       headers: {
         Authorization: 'Bearer REPLACE_ME_WITH_API_KEY',
@@ -40,14 +43,14 @@ const code = `class Example extends React.Component {
 }`;
 
 const curl =
-  'curl -X GET -H "Authorization: Bearer REPLACE_ME_WITH_API_KEY" https://api.estuary.tech/content/stats';
+  'curl -X GET -H "Authorization: Bearer REPLACE_ME_WITH_API_KEY" https://api.pin.storage/content/stats';
 
 function APIContentStats(props) {
   return (
     <App
-      title="Estuary Documentation: API: /content/stats"
-      description="https://api.estuary.tech/content/stats"
-      url="https://docs.estuary.tech/api-content-stats"
+      title="Pin.Storage Documentation: API: /content/stats"
+      description="https://api.pin.storage/content/stats"
+      url="https://docs.pin.storage/api-content-stats"
       active="api-content-stats"
       curl={curl}
       markdown={markdown}

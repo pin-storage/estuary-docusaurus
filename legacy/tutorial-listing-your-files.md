@@ -38,9 +38,9 @@ Once you do so, here is an example of the output:
 
 You can use the CID to retrieve the file immediately by using an IPFS Gateway. Here is an example:
 
-> [https://api.estuary.tech/gw/ipfs/bafybeicgpn...xypuwm](https://api.estuary.tech/gw/ipfs/bafybeicgpnok4bl2rkf4ceojlb376henq6f6ufwqqvyyzmuo4xloxypuwm)
+> [https://api.pin.storage/gw/ipfs/bafybeicgpn...xypuwm](https://api.pin.storage/gw/ipfs/bafybeicgpnok4bl2rkf4ceojlb376henq6f6ufwqqvyyzmuo4xloxypuwm)
 
-The general format for accessing your content by CID is as follows: **https://api.estuary.tech/gw/ipfs/YOUR_DESIRED_CID**
+The general format for accessing your content by CID is as follows: **https://api.pin.storage/gw/ipfs/YOUR_DESIRED_CID**
 
 ### You are done
 

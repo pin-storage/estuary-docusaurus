@@ -1,38 +1,40 @@
 # Swagger\Client\ContentApi
 
-All URIs are relative to *//api.estuary.tech/*
+All URIs are relative to _//api.estuary.tech/_
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**adminInvitesCodePost**](ContentApi.md#admininvitescodepost) | **POST** /admin/invites/{code} | Create an Estuary invite
-[**adminInvitesGet**](ContentApi.md#admininvitesget) | **GET** /admin/invites | Get Estuary invites
-[**contentAddCarPost**](ContentApi.md#contentaddcarpost) | **POST** /content/add-car | Add Car object
-[**contentAddIpfsPost**](ContentApi.md#contentaddipfspost) | **POST** /content/add-ipfs | Add IPFS object
-[**contentAddPost**](ContentApi.md#contentaddpost) | **POST** /content/add | Add new content
-[**contentAggregatedContentGet**](ContentApi.md#contentaggregatedcontentget) | **GET** /content/aggregated/{content} | Get aggregated content stats
-[**contentAllDealsGet**](ContentApi.md#contentalldealsget) | **GET** /content/all-deals | Get all deals for a user
-[**contentBwUsageContentGet**](ContentApi.md#contentbwusagecontentget) | **GET** /content/bw-usage/{content} | Get content bandwidth
-[**contentContentsGet**](ContentApi.md#contentcontentsget) | **GET** /content/contents | Get user contents
-[**contentCreatePost**](ContentApi.md#contentcreatepost) | **POST** /content/create | Add a new content
-[**contentDealsGet**](ContentApi.md#contentdealsget) | **GET** /content/deals | Content with deals
-[**contentEnsureReplicationDatacidGet**](ContentApi.md#contentensurereplicationdatacidget) | **GET** /content/ensure-replication/{datacid} | Ensure Replication
-[**contentFailuresContentGet**](ContentApi.md#contentfailurescontentget) | **GET** /content/failures/{content} | List all failures for a content
-[**contentIdGet**](ContentApi.md#contentidget) | **GET** /content/{id} | Content
-[**contentListGet**](ContentApi.md#contentlistget) | **GET** /content/list | List all pinned content
-[**contentStagingZonesGet**](ContentApi.md#contentstagingzonesget) | **GET** /content/staging-zones | Get staging zone for user, excluding its contents
-[**contentStagingZonesStagingZoneContentsGet**](ContentApi.md#contentstagingzonesstagingzonecontentsget) | **GET** /content/staging-zones/{staging_zone}/contents | Get contents for a staging zone
-[**contentStagingZonesStagingZoneGet**](ContentApi.md#contentstagingzonesstagingzoneget) | **GET** /content/staging-zones/{staging_zone} | Get staging zone without its contents field populated
-[**contentStatsGet**](ContentApi.md#contentstatsget) | **GET** /content/stats | Get content statistics
-[**contentStatusIdGet**](ContentApi.md#contentstatusidget) | **GET** /content/status/{id} | Content Status
+| Method                                                                                                   | HTTP request                                           | Description                                           |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------------------- |
+| [**adminInvitesCodePost**](ContentApi.md#admininvitescodepost)                                           | **POST** /admin/invites/{code}                         | Create an Pin.Storage invite                          |
+| [**adminInvitesGet**](ContentApi.md#admininvitesget)                                                     | **GET** /admin/invites                                 | Get Pin.Storage invites                               |
+| [**contentAddCarPost**](ContentApi.md#contentaddcarpost)                                                 | **POST** /content/add-car                              | Add Car object                                        |
+| [**contentAddIpfsPost**](ContentApi.md#contentaddipfspost)                                               | **POST** /content/add-ipfs                             | Add IPFS object                                       |
+| [**contentAddPost**](ContentApi.md#contentaddpost)                                                       | **POST** /content/add                                  | Add new content                                       |
+| [**contentAggregatedContentGet**](ContentApi.md#contentaggregatedcontentget)                             | **GET** /content/aggregated/{content}                  | Get aggregated content stats                          |
+| [**contentAllDealsGet**](ContentApi.md#contentalldealsget)                                               | **GET** /content/all-deals                             | Get all deals for a user                              |
+| [**contentBwUsageContentGet**](ContentApi.md#contentbwusagecontentget)                                   | **GET** /content/bw-usage/{content}                    | Get content bandwidth                                 |
+| [**contentContentsGet**](ContentApi.md#contentcontentsget)                                               | **GET** /content/contents                              | Get user contents                                     |
+| [**contentCreatePost**](ContentApi.md#contentcreatepost)                                                 | **POST** /content/create                               | Add a new content                                     |
+| [**contentDealsGet**](ContentApi.md#contentdealsget)                                                     | **GET** /content/deals                                 | Content with deals                                    |
+| [**contentEnsureReplicationDatacidGet**](ContentApi.md#contentensurereplicationdatacidget)               | **GET** /content/ensure-replication/{datacid}          | Ensure Replication                                    |
+| [**contentFailuresContentGet**](ContentApi.md#contentfailurescontentget)                                 | **GET** /content/failures/{content}                    | List all failures for a content                       |
+| [**contentIdGet**](ContentApi.md#contentidget)                                                           | **GET** /content/{id}                                  | Content                                               |
+| [**contentListGet**](ContentApi.md#contentlistget)                                                       | **GET** /content/list                                  | List all pinned content                               |
+| [**contentStagingZonesGet**](ContentApi.md#contentstagingzonesget)                                       | **GET** /content/staging-zones                         | Get staging zone for user, excluding its contents     |
+| [**contentStagingZonesStagingZoneContentsGet**](ContentApi.md#contentstagingzonesstagingzonecontentsget) | **GET** /content/staging-zones/{staging_zone}/contents | Get contents for a staging zone                       |
+| [**contentStagingZonesStagingZoneGet**](ContentApi.md#contentstagingzonesstagingzoneget)                 | **GET** /content/staging-zones/{staging_zone}          | Get staging zone without its contents field populated |
+| [**contentStatsGet**](ContentApi.md#contentstatsget)                                                     | **GET** /content/stats                                 | Get content statistics                                |
+| [**contentStatusIdGet**](ContentApi.md#contentstatusidget)                                               | **GET** /content/status/{id}                           | Content Status                                        |
 
 ## **adminInvitesCodePost** {#adminInvitesCodePost}
+
 > string adminInvitesCodePost($code)
 
-Create an Estuary invite
+Create an Pin.Storage invite
 
 This endpoint is used to create an estuary invite.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -60,9 +62,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **code** | **string**| Invite code to be created |
+| Name     | Type       | Description               | Notes |
+| -------- | ---------- | ------------------------- | ----- |
+| **code** | **string** | Invite code to be created |
 
 ### Return type
 
@@ -74,19 +76,21 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **adminInvitesGet** {#adminInvitesGet}
+
 > string adminInvitesGet()
 
-Get Estuary invites
+Get Pin.Storage invites
 
 This endpoint is used to list all estuary invites.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -112,6 +116,7 @@ try {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -124,12 +129,13 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentAddCarPost** {#contentAddCarPost}
+
 > \Swagger\Client\Model\UtilContentAddResponse contentAddCarPost($body, $ignore_dupes, $filename)
 
 Add Car object
@@ -137,6 +143,7 @@ Add Car object
 This endpoint is used to add a car object to the network. The object can be a file or a directory.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -166,11 +173,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**string**](../Model/string.md)| Car |
- **ignore_dupes** | **string**| Ignore Dupes | [optional]
- **filename** | **string**| Filename | [optional]
+| Name             | Type                             | Description  | Notes      |
+| ---------------- | -------------------------------- | ------------ | ---------- |
+| **body**         | [**string**](../Model/string.md) | Car          |
+| **ignore_dupes** | **string**                       | Ignore Dupes | [optional] |
+| **filename**     | **string**                       | Filename     | [optional] |
 
 ### Return type
 
@@ -182,12 +189,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
- - **Accept**: application/json
+- **Content-Type**: _/_
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentAddIpfsPost** {#contentAddIpfsPost}
+
 > string contentAddIpfsPost($body, $ignore_dupes, $overwrite)
 
 Add IPFS object
@@ -195,6 +203,7 @@ Add IPFS object
 This endpoint is used to add an IPFS object to the network. The object can be a file or a directory.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -224,11 +233,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\TypesIpfsPin**](../Model/TypesIpfsPin.md)| IPFS Body |
- **ignore_dupes** | **string**| Ignore Dupes | [optional]
- **overwrite** | **string**| Overwrite conflicting files in collections | [optional]
+| Name             | Type                                                               | Description                                | Notes      |
+| ---------------- | ------------------------------------------------------------------ | ------------------------------------------ | ---------- |
+| **body**         | [**\Swagger\Client\Model\TypesIpfsPin**](../Model/TypesIpfsPin.md) | IPFS Body                                  |
+| **ignore_dupes** | **string**                                                         | Ignore Dupes                               | [optional] |
+| **overwrite**    | **string**                                                         | Overwrite conflicting files in collections | [optional] |
 
 ### Return type
 
@@ -240,12 +249,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
- - **Accept**: application/json
+- **Content-Type**: _/_
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentAddPost** {#contentAddPost}
+
 > \Swagger\Client\Model\UtilContentAddResponse contentAddPost($data, $filename, $coluuid, $replication, $ignore_dupes, $overwrite, $lazy_provide, $dir)
 
 Add new content
@@ -253,6 +263,7 @@ Add new content
 This endpoint is used to upload new content.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -267,8 +278,8 @@ $apiInstance = new Swagger\Client\Api\ContentApi(
     new GuzzleHttp\Client(),
     $config
 );
-$data = "data_example"; // string | 
-$filename = "filename_example"; // string | 
+$data = "data_example"; // string |
+$filename = "filename_example"; // string |
 $coluuid = "coluuid_example"; // string | Collection UUID
 $replication = 56; // int | Replication value
 $ignore_dupes = "ignore_dupes_example"; // string | Ignore Dupes true/false
@@ -287,16 +298,16 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **data** | **string****string**|  |
- **filename** | **string**|  |
- **coluuid** | **string**| Collection UUID | [optional]
- **replication** | **int**| Replication value | [optional]
- **ignore_dupes** | **string**| Ignore Dupes true/false | [optional]
- **overwrite** | **string**| Overwrite files with the same path on same collection | [optional]
- **lazy_provide** | **string**| Lazy Provide true/false | [optional]
- **dir** | **string**| Directory | [optional]
+| Name             | Type                     | Description                                           | Notes      |
+| ---------------- | ------------------------ | ----------------------------------------------------- | ---------- |
+| **data**         | **string\*\***string\*\* |                                                       |
+| **filename**     | **string**               |                                                       |
+| **coluuid**      | **string**               | Collection UUID                                       | [optional] |
+| **replication**  | **int**                  | Replication value                                     | [optional] |
+| **ignore_dupes** | **string**               | Ignore Dupes true/false                               | [optional] |
+| **overwrite**    | **string**               | Overwrite files with the same path on same collection | [optional] |
+| **lazy_provide** | **string**               | Lazy Provide true/false                               | [optional] |
+| **dir**          | **string**               | Directory                                             | [optional] |
 
 ### Return type
 
@@ -308,12 +319,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: multipart/form-data
- - **Accept**: application/json
+- **Content-Type**: multipart/form-data
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentAggregatedContentGet** {#contentAggregatedContentGet}
+
 > string contentAggregatedContentGet($content)
 
 Get aggregated content stats
@@ -321,6 +333,7 @@ Get aggregated content stats
 This endpoint returns aggregated content stats
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -348,9 +361,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **content** | **string**| Content ID |
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **content** | **string** | Content ID  |
 
 ### Return type
 
@@ -362,12 +375,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentAllDealsGet** {#contentAllDealsGet}
+
 > string contentAllDealsGet($begin, $duration, $all)
 
 Get all deals for a user
@@ -375,6 +389,7 @@ Get all deals for a user
 This endpoint is used to get all deals for a user
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -404,11 +419,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **begin** | **string**| Begin |
- **duration** | **string**| Duration |
- **all** | **string**| All |
+| Name         | Type       | Description | Notes |
+| ------------ | ---------- | ----------- | ----- |
+| **begin**    | **string** | Begin       |
+| **duration** | **string** | Duration    |
+| **all**      | **string** | All         |
 
 ### Return type
 
@@ -420,12 +435,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentBwUsageContentGet** {#contentBwUsageContentGet}
+
 > string contentBwUsageContentGet($content)
 
 Get content bandwidth
@@ -433,6 +449,7 @@ Get content bandwidth
 This endpoint returns content bandwidth
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -460,9 +477,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **content** | **string**| Content ID |
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **content** | **string** | Content ID  |
 
 ### Return type
 
@@ -474,12 +491,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentContentsGet** {#contentContentsGet}
+
 > string contentContentsGet($limit, $offset)
 
 Get user contents
@@ -487,6 +505,7 @@ Get user contents
 This endpoint is used to get user contents
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -515,10 +534,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **string**| limit |
- **offset** | **string**| offset |
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **limit**  | **string** | limit       |
+| **offset** | **string** | offset      |
 
 ### Return type
 
@@ -530,12 +549,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentCreatePost** {#contentCreatePost}
+
 > string contentCreatePost($body, $ignore_dupes)
 
 Add a new content
@@ -543,6 +563,7 @@ Add a new content
 This endpoint adds a new content
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -571,10 +592,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\UtilContentCreateBody**](../Model/UtilContentCreateBody.md)| Content |
- **ignore_dupes** | **string**| Ignore Dupes | [optional]
+| Name             | Type                                                                                 | Description  | Notes      |
+| ---------------- | ------------------------------------------------------------------------------------ | ------------ | ---------- |
+| **body**         | [**\Swagger\Client\Model\UtilContentCreateBody**](../Model/UtilContentCreateBody.md) | Content      |
+| **ignore_dupes** | **string**                                                                           | Ignore Dupes | [optional] |
 
 ### Return type
 
@@ -586,12 +607,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: */*
- - **Accept**: application/json
+- **Content-Type**: _/_
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentDealsGet** {#contentDealsGet}
+
 > string contentDealsGet($limit, $offset)
 
 Content with deals
@@ -599,6 +621,7 @@ Content with deals
 This endpoint lists all content with deals
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -627,10 +650,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **int**| Limit | [optional]
- **offset** | **int**| Offset | [optional]
+| Name       | Type    | Description | Notes      |
+| ---------- | ------- | ----------- | ---------- |
+| **limit**  | **int** | Limit       | [optional] |
+| **offset** | **int** | Offset      | [optional] |
 
 ### Return type
 
@@ -642,12 +665,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentEnsureReplicationDatacidGet** {#contentEnsureReplicationDatacidGet}
+
 > string contentEnsureReplicationDatacidGet($datacid)
 
 Ensure Replication
@@ -655,6 +679,7 @@ Ensure Replication
 This endpoint ensures that the content is replicated to the specified number of providers
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -682,9 +707,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **datacid** | **string**| Data CID |
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **datacid** | **string** | Data CID    |
 
 ### Return type
 
@@ -696,12 +721,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentFailuresContentGet** {#contentFailuresContentGet}
+
 > string contentFailuresContentGet($content)
 
 List all failures for a content
@@ -709,6 +735,7 @@ List all failures for a content
 This endpoint returns all failures for a content
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -736,9 +763,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **content** | **string**| Content ID |
+| Name        | Type       | Description | Notes |
+| ----------- | ---------- | ----------- | ----- |
+| **content** | **string** | Content ID  |
 
 ### Return type
 
@@ -750,12 +777,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentIdGet** {#contentIdGet}
+
 > string contentIdGet($id)
 
 Content
@@ -763,6 +791,7 @@ Content
 This endpoint returns a content by its ID
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -790,9 +819,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **int**| Content ID |
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **int** | Content ID  |
 
 ### Return type
 
@@ -804,12 +833,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentListGet** {#contentListGet}
+
 > string contentListGet()
 
 List all pinned content
@@ -817,6 +847,7 @@ List all pinned content
 This endpoint lists all content
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -842,6 +873,7 @@ try {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -854,12 +886,13 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentStagingZonesGet** {#contentStagingZonesGet}
+
 > string contentStagingZonesGet()
 
 Get staging zone for user, excluding its contents
@@ -867,6 +900,7 @@ Get staging zone for user, excluding its contents
 This endpoint is used to get staging zone for user, excluding its contents.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -892,6 +926,7 @@ try {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -904,12 +939,13 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentStagingZonesStagingZoneContentsGet** {#contentStagingZonesStagingZoneContentsGet}
+
 > string contentStagingZonesStagingZoneContentsGet($staging_zone, $limit, $offset)
 
 Get contents for a staging zone
@@ -917,6 +953,7 @@ Get contents for a staging zone
 This endpoint is used to get the contents for a staging zone
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -946,11 +983,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **staging_zone** | **int**| Staging Zone Content ID |
- **limit** | **string**| limit |
- **offset** | **string**| offset |
+| Name             | Type       | Description             | Notes |
+| ---------------- | ---------- | ----------------------- | ----- |
+| **staging_zone** | **int**    | Staging Zone Content ID |
+| **limit**        | **string** | limit                   |
+| **offset**       | **string** | offset                  |
 
 ### Return type
 
@@ -962,12 +999,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentStagingZonesStagingZoneGet** {#contentStagingZonesStagingZoneGet}
+
 > string contentStagingZonesStagingZoneGet($staging_zone)
 
 Get staging zone without its contents field populated
@@ -975,6 +1013,7 @@ Get staging zone without its contents field populated
 This endpoint is used to get a staging zone, excluding its contents.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -1002,9 +1041,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **staging_zone** | **int**| Staging Zone Content ID |
+| Name             | Type    | Description             | Notes |
+| ---------------- | ------- | ----------------------- | ----- |
+| **staging_zone** | **int** | Staging Zone Content ID |
 
 ### Return type
 
@@ -1016,12 +1055,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentStatsGet** {#contentStatsGet}
+
 > string contentStatsGet($limit, $offset)
 
 Get content statistics
@@ -1029,6 +1069,7 @@ Get content statistics
 This endpoint is used to get content statistics. Every content stored in the network (estuary) is tracked by a unique ID which can be used to get information about the content. This endpoint will allow the consumer to get the collected stats of a content
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -1057,10 +1098,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **limit** | **string**| limit |
- **offset** | **string**| offset |
+| Name       | Type       | Description | Notes |
+| ---------- | ---------- | ----------- | ----- |
+| **limit**  | **string** | limit       |
+| **offset** | **string** | offset      |
 
 ### Return type
 
@@ -1072,12 +1113,13 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 ## **contentStatusIdGet** {#contentStatusIdGet}
+
 > string contentStatusIdGet($id)
 
 Content Status
@@ -1085,6 +1127,7 @@ Content Status
 This endpoint returns the status of a content
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -1112,9 +1155,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **int**| Content ID |
+| Name   | Type    | Description | Notes |
+| ------ | ------- | ----------- | ----- |
+| **id** | **int** | Content ID  |
 
 ### Return type
 
@@ -1126,8 +1169,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-

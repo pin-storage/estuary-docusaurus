@@ -1,11 +1,11 @@
-import styles from '@site/legacy/components/App.module.scss';
+import styles from "@site/legacy/components/App.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import SearchInput from '@site/legacy/components/SearchInput';
-import RichText from '@site/legacy/components/RichText';
-import CodeBlock from '@site/legacy/components/CodeBlock';
-import Navigation from '@site/legacy/components/Navigation';
+import SearchInput from "@site/legacy/components/SearchInput";
+import RichText from "@site/legacy/components/RichText";
+import CodeBlock from "@site/legacy/components/CodeBlock";
+import Navigation from "@site/legacy/components/Navigation";
 
 export default function App(props) {
   return (
@@ -33,15 +33,25 @@ export default function App(props) {
           content="https://next-s3-public.s3.us-west-2.amazonaws.com/social/filecoin.hd.png"
         />
 
-        <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/static/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/static/favicon-16x16.png"
+        />
 
         <link rel="shortcut icon" href="/static/favicon.ico" />
       </Head>
       <div className={styles.container}>
         <div className={styles.container__left}>
-          <a href="https://estuary.tech" className={styles.logo}>
-            Estuary
+          <a href="https://pin.storage" className={styles.logo}>
+            Pin.Storage
           </a>
         </div>
         <div className={styles.container__right}>
@@ -62,7 +72,11 @@ export default function App(props) {
           </div>
         )}
         <div className={styles.sections__body}>
-          {props.markdown ? <RichText>{props.markdown}</RichText> : props.children}
+          {props.markdown ? (
+            <RichText>{props.markdown}</RichText>
+          ) : (
+            props.children
+          )}
         </div>
 
         {props.curl || props.code ? (
