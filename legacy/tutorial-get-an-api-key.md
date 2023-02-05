@@ -36,7 +36,7 @@ Click on API keys.
 
 On this screen you should see a button to generate an API key, click it.
 
-![https://next-s3-public.s3-us-west-2.amazonaws.com/estuary-marketing-hero.png](https://next-s3-public.s3-us-west-2.amazonaws.com/estuary-tutorial/tutorial-1.png)
+![](./images/upload-2.png)
 
 ### Test your API key
 
