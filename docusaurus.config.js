@@ -101,7 +101,7 @@ const config = {
         items: [
           {
             label: "pin.storage",
-            to: "https://pin-storage-web.vercel.app/",
+            to: "https://pin.storage/",
             position: "left",
             className: "logo",
           },
