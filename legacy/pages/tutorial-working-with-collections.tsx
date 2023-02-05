@@ -1,16 +1,16 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import App from '@components/App';
-import markdown from '@documentation/tutorial-working-with-collections.md';
+import App from "@components/App";
+import markdown from "@documentation/tutorial-working-with-collections.md";
 
 function TutorialWorkingWithCollections(props) {
   return (
     <App
-      title="Estuary Documentation: Tutorial: Working with Collections"
+      title="Pin.Storage Documentation: Tutorial: Working with Collections"
       description="Learn more about how collections work and how to interact with them"
-      url="https://docs.estuary.tech/tutorial-working-with-collections"
+      url="https://docs.pin.storage/tutorial-working-with-collections"
       // curl={curl}
       markdown={markdown}
       // code={code}

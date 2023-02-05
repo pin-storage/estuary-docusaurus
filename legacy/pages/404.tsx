@@ -1,8 +1,8 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import App from '@components/App';
+import App from "@components/App";
 
 const markdown = `# 404
 
@@ -13,9 +13,9 @@ const curl = null;
 function ErrorPage(props) {
   return (
     <App
-      title="Estuary Documentation: 404"
+      title="Pin.Storage Documentation: 404"
       description="404"
-      url="https://docs.estuary.tech/404"
+      url="https://docs.pin.storage/404"
       curl={curl}
       markdown={markdown}
       code={code}

@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Store your public data. Estuary is a custom Filecoin/IPFS node that makes storing meaningful publicly licensed data on the Filecoin Network easier"
+      description="Store your public data. Pin.Storage is a custom Filecoin/IPFS node that makes storing meaningful publicly licensed data on the Filecoin Network easier"
     >
       <HomepageHeader />
       <main>

@@ -1,16 +1,16 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import Markdown from '@documentation/index.md';
-import App from '@components/App';
+import Markdown from "@documentation/index.md";
+import App from "@components/App";
 
 const code = `class Example extends React.Component {
   componentDidMount() {
     // NOTE
     // API endpoint to get total storage in bytes
     // total files added to Filecoin
-    fetch('https://api.estuary.tech/public/stats')
+    fetch('https://api.pin.storage/public/stats')
       .then(data => {
         return data.json();
       })
@@ -24,15 +24,15 @@ const code = `class Example extends React.Component {
   }
 }`;
 
-const curl = `curl -X GET https://api.estuary.tech/public/stats`;
+const curl = `curl -X GET https://api.pin.storage/public/stats`;
 const key = `introduction`;
 
 function Home(props) {
   return (
     <App
-      title="Estuary Documentation"
-      description="Store your public data. Estuary is a custom Filecoin/IPFS node that makes storing meaningful publicly licensed data on the Filecoin Network easier."
-      url="https://docs.estuary.tech"
+      title="Pin.Storage Documentation"
+      description="Store your public data. Pin.Storage is a custom Filecoin/IPFS node that makes storing meaningful publicly licensed data on the Filecoin Network easier."
+      url="https://docs.pin.storage"
       curl={curl}
       markdown={Markdown}
       code={code}

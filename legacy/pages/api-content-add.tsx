@@ -1,25 +1,25 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import App from '@components/App';
+import App from "@components/App";
 
-const endpoint = '/content/add';
+const endpoint = "/content/add";
 const markdown =
   `# ➟ ` +
   endpoint +
   `
 
-Use this endpoint to upload data to the Estuary Node, one file at a time.
+Use this endpoint to upload data to the Pin.Storage Node, one file at a time.
 
-For more of an explanation, read [this](https://docs.estuary.tech/tutorial-uploading-your-first-file).
+For more of an explanation, read [this](https://docs.pin.storage/tutorial-uploading-your-first-file).
 
 ### Swagger
 For more information about this API swagger specification, see [here](swagger-ui-page#/content/post_content_add)
 
 ### This page is a work in progress
 
-We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.estuary.tech/feedback).
+We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.pin.storage/feedback).
 `;
 
 const code = `class Example extends React.Component {
@@ -70,9 +70,9 @@ const curl = `curl -X POST https://upload.estuary.tech/content/add?coluuid=UUID-
 function APIContentAdd(props) {
   return (
     <App
-      title="Estuary Documentation: API: /content/add"
+      title="Pin.Storage Documentation: API: /content/add"
       description="https://upload.estuary.tech/content/add"
-      url="https://docs.estuary.tech/api-content-add"
+      url="https://docs.pin.storage/api-content-add"
       active="api-content-add"
       curl={curl}
       markdown={markdown}

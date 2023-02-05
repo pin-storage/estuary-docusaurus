@@ -1,11 +1,14 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import App from '@components/App';
+import App from "@components/App";
 
-const endpoint = '/public/miners/storage/query/{miner}';
-const markdown = `# ➟ ` + endpoint + `
+const endpoint = "/public/miners/storage/query/{miner}";
+const markdown =
+  `# ➟ ` +
+  endpoint +
+  `
 
 Use this endpoint to get the query ask and verified ask for any miner.
 
@@ -14,12 +17,12 @@ For more information about this API swagger specification, see [here](swagger-ui
 
 ### This page is a work in progress
 
-We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.estuary.tech/feedback).
+We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.pin.storage/feedback).
 `;
 
 const code = `class Example extends React.Component {
   componentDidMount() {
-    fetch('https://api.estuary.tech/public/miners/storage/query/{miner}', {
+    fetch('https://api.pin.storage/public/miners/storage/query/{miner}', {
       method: 'GET',
       headers: {
         Authorization: 'Bearer REPLACE_ME_WITH_API_KEY',
@@ -39,14 +42,15 @@ const code = `class Example extends React.Component {
   }
 }`;
 
-const curl = 'curl -X GET https://api.estuary.tech/public/miners/storage/query/f0135078';
+const curl =
+  "curl -X GET https://api.pin.storage/public/miners/storage/query/f0135078";
 
 function APIPublicMinerStats(props) {
   return (
     <App
-      title="Estuary Documentation: API: /public/miners/storage/query/:miner"
+      title="Pin.Storage Documentation: API: /public/miners/storage/query/:miner"
       description="get miner price verifiedPrice minPieceSize and maxPieceSize."
-      url="https://docs.estuary.tech/api-public-miners-ask"
+      url="https://docs.pin.storage/api-public-miners-ask"
       active="api-public-miners-ask"
       curl={curl}
       markdown={markdown}

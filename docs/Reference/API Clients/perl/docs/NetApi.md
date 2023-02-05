@@ -1,29 +1,31 @@
 # WWW::SwaggerClient::NetApi
 
 ## Load the API package
+
 ```perl
 use WWW::SwaggerClient::Object::NetApi;
 ```
 
-All URIs are relative to *https://api.estuary.tech*
+All URIs are relative to *https://api.pin.storage*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**net_addrs_get**](NetApi.md#net_addrs_get) | **GET** /net/addrs | Net Addrs
-[**public_miners_failures_miner_get**](NetApi.md#public_miners_failures_miner_get) | **GET** /public/miners/failures/{miner} | Get all miners
-[**public_miners_get**](NetApi.md#public_miners_get) | **GET** /public/miners | Get all miners
-[**public_net_addrs_get**](NetApi.md#public_net_addrs_get) | **GET** /public/net/addrs | Net Addrs
-[**public_net_peers_get**](NetApi.md#public_net_peers_get) | **GET** /public/net/peers | Net Peers
-
+| Method                                                                             | HTTP request                            | Description    |
+| ---------------------------------------------------------------------------------- | --------------------------------------- | -------------- |
+| [**net_addrs_get**](NetApi.md#net_addrs_get)                                       | **GET** /net/addrs                      | Net Addrs      |
+| [**public_miners_failures_miner_get**](NetApi.md#public_miners_failures_miner_get) | **GET** /public/miners/failures/{miner} | Get all miners |
+| [**public_miners_get**](NetApi.md#public_miners_get)                               | **GET** /public/miners                  | Get all miners |
+| [**public_net_addrs_get**](NetApi.md#public_net_addrs_get)                         | **GET** /public/net/addrs               | Net Addrs      |
+| [**public_net_peers_get**](NetApi.md#public_net_peers_get)                         | **GET** /public/net/peers               | Net Peers      |
 
 # **net_addrs_get**
+
 > ARRAY[string] net_addrs_get()
 
 Net Addrs
 
 This endpoint is used to get net addrs
 
-### Example 
+### Example
+
 ```perl
 use Data::Dumper;
 use WWW::SwaggerClient::NetApi;
@@ -36,7 +38,7 @@ my $api_instance = WWW::SwaggerClient::NetApi->new(
 );
 
 
-eval { 
+eval {
     my $result = $api_instance->net_addrs_get();
     print Dumper($result);
 };
@@ -46,6 +48,7 @@ if ($@) {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -58,19 +61,21 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **public_miners_failures_miner_get**
+
 > public_miners_failures_miner_get(miner => $miner)
 
 Get all miners
 
 This endpoint returns all miners
 
-### Example 
+### Example
+
 ```perl
 use Data::Dumper;
 use WWW::SwaggerClient::NetApi;
@@ -84,7 +89,7 @@ my $api_instance = WWW::SwaggerClient::NetApi->new(
 
 my $miner = 'miner_example'; # string | Filter by miner
 
-eval { 
+eval {
     $api_instance->public_miners_failures_miner_get(miner => $miner);
 };
 if ($@) {
@@ -94,9 +99,9 @@ if ($@) {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **miner** | **string**| Filter by miner | 
+| Name      | Type       | Description     | Notes |
+| --------- | ---------- | --------------- | ----- |
+| **miner** | **string** | Filter by miner |
 
 ### Return type
 
@@ -108,19 +113,21 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **public_miners_get**
+
 > public_miners_get()
 
 Get all miners
 
 This endpoint returns all miners
 
-### Example 
+### Example
+
 ```perl
 use Data::Dumper;
 use WWW::SwaggerClient::NetApi;
@@ -133,7 +140,7 @@ my $api_instance = WWW::SwaggerClient::NetApi->new(
 );
 
 
-eval { 
+eval {
     $api_instance->public_miners_get();
 };
 if ($@) {
@@ -142,6 +149,7 @@ if ($@) {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -154,19 +162,21 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **public_net_addrs_get**
+
 > ARRAY[string] public_net_addrs_get()
 
 Net Addrs
 
 This endpoint is used to get net addrs
 
-### Example 
+### Example
+
 ```perl
 use Data::Dumper;
 use WWW::SwaggerClient::NetApi;
@@ -179,7 +189,7 @@ my $api_instance = WWW::SwaggerClient::NetApi->new(
 );
 
 
-eval { 
+eval {
     my $result = $api_instance->public_net_addrs_get();
     print Dumper($result);
 };
@@ -189,6 +199,7 @@ if ($@) {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -201,19 +212,21 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **public_net_peers_get**
+
 > ARRAY[string] public_net_peers_get()
 
 Net Peers
 
 This endpoint is used to get net peers
 
-### Example 
+### Example
+
 ```perl
 use Data::Dumper;
 use WWW::SwaggerClient::NetApi;
@@ -226,7 +239,7 @@ my $api_instance = WWW::SwaggerClient::NetApi->new(
 );
 
 
-eval { 
+eval {
     my $result = $api_instance->public_net_peers_get();
     print Dumper($result);
 };
@@ -236,6 +249,7 @@ if ($@) {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -248,8 +262,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

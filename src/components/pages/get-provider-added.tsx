@@ -33,8 +33,8 @@ function GetProviderAdded(props) {
         <div>
           <p>
             Fill out this form to to get your provider added to{" "}
-            <a href="https://estuary.tech" target="_blank">
-              https://estuary.tech
+            <a href="https://pin.storage" target="_blank">
+              https://pin.storage
             </a>{" "}
             and receive verified Filecoin storage deals. If your provider is
             qualified, we will add it to our provider index and you will receive
@@ -119,8 +119,8 @@ function GetProviderAdded(props) {
 
           <ul className={styles.ul}>
             <li className={styles.li}>
-              We are in the early stages of Estuary development and we have a
-              preference for storage providers who want to store public data
+              We are in the early stages of Pin.Storage development and we have
+              a preference for storage providers who want to store public data
               that is meant to be accessed by anyone.
             </li>
           </ul>

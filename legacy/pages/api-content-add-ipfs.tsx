@@ -1,10 +1,10 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import App from '@components/App';
+import App from "@components/App";
 
-const endpoint = '/content/add-ipfs';
+const endpoint = "/content/add-ipfs";
 const markdown =
   `# ➟ ` +
   endpoint +
@@ -19,17 +19,17 @@ For more information about this API swagger specification, see [here](swagger-ui
 
 ### This page is a work in progress
 
-We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.estuary.tech/feedback).
+We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.pin.storage/feedback).
 `;
 
 const key = `api-content-add-ipfs`;
 
-const CID = 'bafybeidj7c2e3daplalccukbps4eze7473gyshspev76xi4sjfmfkuaofe';
-const name = '1882818-2021-nature-videos.zip';
+const CID = "bafybeidj7c2e3daplalccukbps4eze7473gyshspev76xi4sjfmfkuaofe";
+const name = "1882818-2021-nature-videos.zip";
 
 const code = `class Example extends React.Component {
               componentDidMount() {
-                fetch('https://api.estuary.tech/content/add-ipfs', {
+                fetch('https://api.pin.storage/content/add-ipfs', {
                   method: 'POST',
                   headers: {
                     Authorization: 'Bearer REPLACE_ME_WITH_API_KEY',
@@ -51,14 +51,14 @@ root: 'YOUR_CID_HERE',
               }
             }`;
 
-const curl = `curl -X POST https://api.estuary.tech/content/add-ipfs -H "Authorization: Bearer REPLACE_ME_WITH_API_KEY" -H "Accept: application/json" -d '{"root": "REPLACE_ME_WITH_CID"}'`;
+const curl = `curl -X POST https://api.pin.storage/content/add-ipfs -H "Authorization: Bearer REPLACE_ME_WITH_API_KEY" -H "Accept: application/json" -d '{"root": "REPLACE_ME_WITH_CID"}'`;
 
 function APIContentAddIPFS(props) {
   return (
     <App
-      title="Estuary Documentation: API: /content/add-ipfs"
-      description="https://api.estuary.tech/content/add-ipfs"
-      url={`https://docs.estuary.tech/${key}`}
+      title="Pin.Storage Documentation: API: /content/add-ipfs"
+      description="https://api.pin.storage/content/add-ipfs"
+      url={`https://docs.pin.storage/${key}`}
       active={key}
       curl={curl}
       markdown={markdown}

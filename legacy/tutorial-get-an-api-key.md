@@ -8,7 +8,7 @@ Questions? Visit the [FAQ](/docs/FAQ) or reach out to us on [Slack](https://file
 
 # Get an API key
 
-As a developer you have probably used API keys before. Estuary provides a unique identifier used to authenticate a user, developer, or calling program to an application programming interface we have created.
+As a developer you have probably used API keys before. Pin.Storage provides a unique identifier used to authenticate a user, developer, or calling program to an application programming interface we have created.
 
 If you don't know what an API key is, this tutorial will be challenging for you, but you can reach out to us if you're stuck. API keys are the standard way to authenticate a project with an API rather than a human user. **It is also important you understand how to protect your API key/secrets from bad actors and abuse**. If this concept is foreign to you, you might be better off just using [https://pin-storage-web.vercel.app/](https://pin-storage-web.vercel.app/) and storing data through our website.
 
@@ -16,7 +16,7 @@ If you don't know what an API key is, this tutorial will be challenging for you,
 
 Before we start, make sure you have done the following:
 
-- **Create an account on https://estuary.tech**. If you have not done this, you won't be able to get an API key for yourself. To create an account you can request access [here](https://docs.estuary.tech/get-invite-key).
+- **Create an account on https://pin.storage**. If you have not done this, you won't be able to get an API key for yourself. To create an account you can request access [here](https://docs.pin.storage/get-invite-key).
 
 - **Setup an example application**. To use the API in a meaningful way, you should setup a sample application. You can use our [next-sass (React + NextJS)](https://github.com/application-research/next-sass) GitHub template, our [origin (Vue + Vite)](https://github.com/application-research/origin) template, or anything of your own choosing.
 
@@ -24,11 +24,11 @@ Before we start, make sure you have done the following:
 
 If you're ready, let's begin!
 
-### Sign in to Estuary
+### Sign in to Pin.Storage
 
-When you sign in to Estuary, you should should land on this page.
+When you sign in to Pin.Storage, you should should land on this page.
 
-![https://next-s3-public.s3-us-west-2.amazonaws.com/estuary-marketing-hero.png](https://next-s3-public.s3-us-west-2.amazonaws.com/estuary-tutorial/tutorial-2.png)
+![](./images/upload-1.png)
 
 Click on API keys.
 
@@ -42,7 +42,7 @@ On this screen you should see a button to generate an API key, click it.
 
 Use your new API key on the screen to the right by clicking the Authorize button and pasting in your Api Key.
 
-** HOWEVER ** please note that the Authorize button sets the HTTP Authorization Header and to properly use the Estuary API you should enter a value for the header in the format Bearer ESTxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxARY
+** HOWEVER ** please note that the Authorize button sets the HTTP Authorization Header and to properly use the Pin.Storage API you should enter a value for the header in the format Bearer ESTxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxARY
 
 ### What is next?
 

@@ -1,11 +1,14 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import App from '@components/App';
+import App from "@components/App";
 
-const endpoint = '/pinning/pins/{pinid}';
-const markdown = `# ➟ ` + endpoint + `
+const endpoint = "/pinning/pins/{pinid}";
+const markdown =
+  `# ➟ ` +
+  endpoint +
+  `
 
 ## Overview
 Get a pinned object.
@@ -19,13 +22,13 @@ Check out the [offical IPFS Pinning documentation](https://ipfs.github.io/pinnin
 
 ### This page is a work in progress
 
-We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.estuary.tech/feedback).`;
-const key = 'pinning-get-by-id';
-const route = 'https://api.estuary.tech/pinning/pins/:id';
+We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.pin.storage/feedback).`;
+const key = "pinning-get-by-id";
+const route = "https://api.pin.storage/pinning/pins/:id";
 
 const code = `class Example extends React.Component {
   componentDidMount() {
-    fetch('https://api.estuary.tech/pinning/pins/{pinid}', {
+    fetch('https://api.pin.storage/pinning/pins/{pinid}', {
       method: 'DELETE',
       headers: {
         Authorization: 'Bearer REPLACE_ME_WITH_API_KEY',
@@ -45,14 +48,14 @@ const code = `class Example extends React.Component {
   }
 }`;
 
-const curl = `curl -X DELETE https://api.estuary.tech/pinning/pins/{pinid} -H "Authorization: Bearer REPLACE_ME_WITH_API_KEY" -H "Accept: application/json"`;
+const curl = `curl -X DELETE https://api.pin.storage/pinning/pins/{pinid} -H "Authorization: Bearer REPLACE_ME_WITH_API_KEY" -H "Accept: application/json"`;
 
 function PinningGet(props) {
   return (
     <App
-      title="Estuary Documentation: Pinning: Get"
+      title="Pin.Storage Documentation: Pinning: Get"
       description="Get a pinned object."
-      url={`https://docs.estuary.tech/${key}`}
+      url={`https://docs.pin.storage/${key}`}
       curl={curl}
       markdown={markdown}
       code={code}

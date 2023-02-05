@@ -1,14 +1,17 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import App from '@components/App';
+import App from "@components/App";
 
 const name = '"A new collection"';
 const description = '"A new collection test"';
 
-const endpoint = '/collections/create';
-const markdown = `# ➟ ` + endpoint + `
+const endpoint = "/collections/create";
+const markdown =
+  `# ➟ ` +
+  endpoint +
+  `
 
 Use this endpoint to create a collection where you can add data to it.
 
@@ -23,7 +26,7 @@ To add files to this collection or 'directory' (which are pinned as child of the
 
 const code = `class Example extends React.Component {
               componentDidMount() {
-                fetch('https://api.estuary.tech/collections/create', {
+                fetch('https://api.pin.storage/collections/create', {
                   method: 'POST',
                   headers: {
                     Authorization: 'Bearer REPLACE_ME_WITH_API_KEY',
@@ -45,14 +48,14 @@ body: 'BODY',
               }
             }`;
 
-const curl = `curl -X POST https://api.estuary.tech/collections/create -H "Authorization: Bearer REPLACE_ME_WITH_API_KEY" -H "Accept: application/json" -d '{"body": "BODY"}'`;
+const curl = `curl -X POST https://api.pin.storage/collections/create -H "Authorization: Bearer REPLACE_ME_WITH_API_KEY" -H "Accept: application/json" -d '{"body": "BODY"}'`;
 
 function APICollectionCreate(props) {
   return (
     <App
-      title="Estuary Documentation: API: /collections/create"
-      description="https://api.estuary.tech/collections/create"
-      url="https://docs.estuary.tech/collections-create"
+      title="Pin.Storage Documentation: API: /collections/create"
+      description="https://api.pin.storage/collections/create"
+      url="https://docs.pin.storage/collections-create"
       active="api-collections-create"
       curl={curl}
       markdown={markdown}

@@ -1,11 +1,14 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import App from '@components/App';
+import App from "@components/App";
 
-const endpoint = '/pinning/pins';
-const markdown = `# ➟ ` + endpoint + `
+const endpoint = "/pinning/pins";
+const markdown =
+  `# ➟ ` +
+  endpoint +
+  `
 
 This endpoint lists all contents, whether they are pinned (active), inactive, failed, etc. **Important:** This is different than the **/content/list** endpoint, which will only list pinned (active) contents.
 
@@ -20,17 +23,17 @@ Pinning is a method that allows you to instruct IPFS to store a specific object 
 For more information about this API swagger specification, see [here](swagger-ui-page#/pinning/get_pinning_pins)
 
 ### This page is a work in progress
-We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.estuary.tech/feedback).
+We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.pin.storage/feedback).
 
 ### Need more information?
 Check out the [offical IPFS Pinning documentation](https://ipfs.github.io/pinning-services-api-spec/#tag/pins/paths/~1pins/get). We made sure the follow the standards.
 `;
-const key = 'pinning-list';
-const route = 'https://api.estuary.tech/pinning/pins';
+const key = "pinning-list";
+const route = "https://api.pin.storage/pinning/pins";
 
 const code = `class Example extends React.Component {
   componentDidMount() {
-    fetch('https://api.estuary.tech/pinning/pins', {
+    fetch('https://api.pin.storage/pinning/pins', {
       method: 'POST',
       headers: {
         Authorization: 'Bearer REPLACE_ME_WITH_API_KEY',
@@ -50,14 +53,14 @@ const code = `class Example extends React.Component {
   }
 }`;
 
-const curl = `curl -X POST https://api.estuary.tech/pinning/pins -H "Authorization: Bearer REPLACE_ME_WITH_API_KEY" -H "Accept: application/json"`;
+const curl = `curl -X POST https://api.pin.storage/pinning/pins -H "Authorization: Bearer REPLACE_ME_WITH_API_KEY" -H "Accept: application/json"`;
 
 function PinningGet(props) {
   return (
     <App
-      title="Estuary Documentation: Pinning: Get list"
+      title="Pin.Storage Documentation: Pinning: Get list"
       description="Get list of pinned objects."
-      url={`https://docs.estuary.tech/${key}`}
+      url={`https://docs.pin.storage/${key}`}
       curl={curl}
       markdown={markdown}
       code={code}

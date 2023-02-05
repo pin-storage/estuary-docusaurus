@@ -1,13 +1,13 @@
-import * as React from 'react';
-import App from '@components/App';
-import markdown from '@documentation/tutorial-managing-files-with-rclone.md';
+import * as React from "react";
+import App from "@components/App";
+import markdown from "@documentation/tutorial-managing-files-with-rclone.md";
 
 function TutorialManagingFilesWithRclone(props) {
   return (
     <App
-      title="Estuary Documentation: Tutorial: Managing Files with Rclone"
-      description="Learn more about how to use rclone to move files from other storage providers to Estuary"
-      url="https://docs.estuary.tech/tutorial-managing-files-with-rclone"
+      title="Pin.Storage Documentation: Tutorial: Managing Files with Rclone"
+      description="Learn more about how to use rclone to move files from other storage providers to Pin.Storage"
+      url="https://docs.pin.storage/tutorial-managing-files-with-rclone"
       // curl={curl}
       markdown={markdown}
       // code={code}

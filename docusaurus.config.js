@@ -6,10 +6,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Estuary Documentation",
+  title: "Pin.Storage Documentation",
   tagline:
     "A reliable way to upload public data onto Filecoin and pin it to IPFS.",
-  url: "https://docs.estuary.tech",
+  url: "https://docs.pin.storage",
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",

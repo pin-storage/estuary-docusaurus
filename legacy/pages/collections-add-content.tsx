@@ -1,11 +1,14 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import App from '@components/App';
+import App from "@components/App";
 
-const endpoint = '/content/add';
-const markdown = `# ➟ ` + endpoint + `
+const endpoint = "/content/add";
+const markdown =
+  `# ➟ ` +
+  endpoint +
+  `
 
 To add content to a collection that you have already created with the 'create collection' POST API call, use the /content/add endpoint passing the coluuid and dir (optional) query parameters.
 
@@ -45,7 +48,7 @@ const code = `class Example extends React.Component {
     
     xhr.open(
       "POST", 
-      "https://api.estuary.tech/content/add"
+      "https://api.pin.storage/content/add"
     );
     xhr.setRequestHeader(
       "Authorization", 
@@ -65,14 +68,14 @@ const code = `class Example extends React.Component {
   }
 }`;
 
-const curl = `curl -X POST https://api.estuary.tech/content/add -H "Authorization: Bearer REPLACE_ME_WITH_API_KEY" -H "Accept: application/json"  -H "Content-Type: multipart/form-data" -F "file=FILE"`;
+const curl = `curl -X POST https://api.pin.storage/content/add -H "Authorization: Bearer REPLACE_ME_WITH_API_KEY" -H "Accept: application/json"  -H "Content-Type: multipart/form-data" -F "file=FILE"`;
 
 function APICollectionAddContent(props) {
   return (
     <App
-      title="Estuary Documentation: API: /collections/add-content"
-      description="https://api.estuary.tech/collections/add-content"
-      url="https://docs.estuary.tech/collections-add-content"
+      title="Pin.Storage Documentation: API: /collections/add-content"
+      description="https://api.pin.storage/collections/add-content"
+      url="https://docs.pin.storage/collections-add-content"
       active="api-collections-add-content"
       curl={curl}
       markdown={markdown}

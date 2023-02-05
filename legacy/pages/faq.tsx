@@ -1,9 +1,9 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import Markdown from '@documentation/faq.md';
-import App from '@components/App';
+import Markdown from "@documentation/faq.md";
+import App from "@components/App";
 
 const code = null;
 const curl = null;
@@ -12,9 +12,9 @@ const key = `faq`;
 function Home(props) {
   return (
     <App
-      title="Estuary Documentation: FAQ"
+      title="Pin.Storage Documentation: FAQ"
       description="Frequently asked questions and criticism."
-      url="https://docs.estuary.tech/faq"
+      url="https://docs.pin.storage/faq"
       curl={curl}
       markdown={Markdown}
       code={code}

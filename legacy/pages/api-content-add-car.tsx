@@ -1,10 +1,10 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import App from '@components/App';
+import App from "@components/App";
 
-const endpoint = '/content/add-car';
+const endpoint = "/content/add-car";
 const markdown =
   `# ➟ ` +
   endpoint +
@@ -17,7 +17,7 @@ For more information about this API swagger specification, see [here](swagger-ui
 
 ### This page is a work in progress
 
-We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.estuary.tech/feedback).
+We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.pin.storage/feedback).
 `;
 
 const key = `api-content-add-car`;
@@ -68,9 +68,9 @@ const code =
 function APIContentAddCAR(props) {
   return (
     <App
-      title="Estuary Documentation: API: /content/add-car"
+      title="Pin.Storage Documentation: API: /content/add-car"
       description="https://upload.estuary.tech/content/add-car" // question: where does this show up?
-      url={`https://docs.estuary.tech/${key}`}
+      url={`https://docs.pin.storage/${key}`}
       active={key}
       curl={curl}
       markdown={markdown}

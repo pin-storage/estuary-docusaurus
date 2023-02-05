@@ -1,23 +1,23 @@
 # WWW::SwaggerClient::DefaultApi
 
 ## Load the API package
+
 ```perl
 use WWW::SwaggerClient::Object::DefaultApi;
 ```
 
-All URIs are relative to *https://api.estuary.tech*
+All URIs are relative to *https://api.pin.storage*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**deal_transfer_status_post**](DefaultApi.md#deal_transfer_status_post) | **POST** /deal/transfer/status | 
-
+| Method                                                                   | HTTP request                   | Description |
+| ------------------------------------------------------------------------ | ------------------------------ | ----------- |
+| [**deal_transfer_status_post**](DefaultApi.md#deal_transfer_status_post) | **POST** /deal/transfer/status |
 
 # **deal_transfer_status_post**
+
 > deal_transfer_status_post()
 
+### Example
 
-
-### Example 
 ```perl
 use Data::Dumper;
 use WWW::SwaggerClient::DefaultApi;
@@ -30,7 +30,7 @@ my $api_instance = WWW::SwaggerClient::DefaultApi->new(
 );
 
 
-eval { 
+eval {
     $api_instance->deal_transfer_status_post();
 };
 if ($@) {
@@ -39,6 +39,7 @@ if ($@) {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -51,8 +52,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+- **Content-Type**: Not defined
+- **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-

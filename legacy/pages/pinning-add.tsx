@@ -1,11 +1,14 @@
-import styles from '@pages/Page.module.scss';
+import styles from "@pages/Page.module.scss";
 
-import * as React from 'react';
+import * as React from "react";
 
-import App from '@components/App';
+import App from "@components/App";
 
-const endpoint = '/pinning/pins';
-const markdown = `# ➟ ` + endpoint + `
+const endpoint = "/pinning/pins";
+const markdown =
+  `# ➟ ` +
+  endpoint +
+  `
 
 ## Overview
 Add a new pin object for the current access token.
@@ -21,16 +24,16 @@ Check out the [offical IPFS Pinning documentation](https://ipfs.github.io/pinnin
 
 ### This page is a work in progress
 
-We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.estuary.tech/feedback).
+We will be adding more code examples and more details over time. Thanks for bearing with us and our team! If you have ideas, write us some [feedback](https://docs.pin.storage/feedback).
 `;
-const cid = 'bafybeidj7c2e3daplalccukbps4eze7473gyshspev76xi4sjfmfkuaofe';
-const name = '1882818-2021-nature-videos.zip';
-const key = 'pinning-add';
-const route = 'https://api.estuary.tech/pinning/pins';
+const cid = "bafybeidj7c2e3daplalccukbps4eze7473gyshspev76xi4sjfmfkuaofe";
+const name = "1882818-2021-nature-videos.zip";
+const key = "pinning-add";
+const route = "https://api.pin.storage/pinning/pins";
 
 const code = `class Example extends React.Component {
   componentDidMount() {
-    fetch('https://api.estuary.tech/pinning/pins', {
+    fetch('https://api.pin.storage/pinning/pins', {
       method: 'POST',
       headers: {
         Authorization: 'Bearer REPLACE_ME_WITH_API_KEY',
@@ -50,14 +53,14 @@ const code = `class Example extends React.Component {
   }
 }`;
 
-const curl = `curl -X POST https://api.estuary.tech/pinning/pins -H "Authorization: Bearer REPLACE_ME_WITH_API_KEY" -H "Accept: application/json"`;
+const curl = `curl -X POST https://api.pin.storage/pinning/pins -H "Authorization: Bearer REPLACE_ME_WITH_API_KEY" -H "Accept: application/json"`;
 
 function PinningAdd(props) {
   return (
     <App
-      title="Estuary Documentation: Pinning: Add"
+      title="Pin.Storage Documentation: Pinning: Add"
       description="Add a new pin object for the current access token."
-      url={`https://docs.estuary.tech/${key}`}
+      url={`https://docs.pin.storage/${key}`}
       curl={curl}
       markdown={markdown}
       code={code}
